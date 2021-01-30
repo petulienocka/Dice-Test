@@ -1,25 +1,27 @@
-// General Style //
-
-*{ margin: 0px; padding: 0px; box-sizing: border-box;}
-
-
 // Variables //
 
+$main-color: white;
+$main-font: 'Times New Roman', Times, serif;
+$icon-size: 30px;
 
-// Navbar //
+
+// General Style //
+
+*{ margin: 0px; padding: 0px; box-sizing: border-box; font-family: $main-font}
+
 
 // Header //
 
 .back-icon {
-  font-size: 30px;
+  font-size: $icon-size;
   margin-top: 10px;
   margin-left: 30px;
-  color: white;
+  color: $main-color;
 }
 
 .back-span{
   font-size: 20px;
-  color: white;
+  color: $main-color;
 }
 
 
@@ -44,7 +46,7 @@
 .dice-container {
   position: relative;
   text-align: center;
-  color: white;
+  color: $main-color;
 }
 
 
@@ -64,7 +66,7 @@
 
 .icon {
   margin-right: 10px;
-  font-size: 30px;
+  font-size: $icon-size;
 }
 
 .container {
@@ -83,7 +85,7 @@
 }
 .box-faces p {
  margin-top: 70px;
- font-size: 30px; 
+ font-size: $icon-size; 
   
 }
 .box-face {
@@ -123,7 +125,7 @@
   animation: spin 15s infinite linear;
 }
 
-.icon { color: white;
+.icon { color: $main-color;
  }
 
 .shadow-wrapper {
