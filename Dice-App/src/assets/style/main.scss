@@ -1,0 +1,192 @@
+// General Style //
+
+*{ margin: 0px; padding: 0px; box-sizing: border-box;}
+
+
+// Variables //
+
+
+// Navbar //
+
+// Header //
+
+.back-icon {
+  font-size: 30px;
+  margin-top: 10px;
+  margin-left: 30px;
+  color: white;
+}
+
+.back-span{
+  font-size: 20px;
+  color: white;
+}
+
+
+// Components-Common Style //
+
+.dice {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+
+// Custom Component //
+
+.dice-text {
+  position: absolute;
+  top: 22.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dice-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+// Multiple Component //
+
+.row {
+  padding-top: 50px;
+}
+
+.count-row {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+// Cube Component //
+
+.icon {
+  margin-right: 10px;
+  font-size: 30px;
+}
+
+.container {
+  margin-top: -200px;
+}
+
+.box-wrapper {
+  perspective: 800px;
+  perspective-origin: 50% 100px;
+}
+
+.box-faces {
+  position: relative;
+  width: 200px;
+  transform-style: preserve-3d;
+}
+.box-faces p {
+ margin-top: 70px;
+ font-size: 30px; 
+  
+}
+.box-face {
+  outline: 1px solid #999;
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  opacity: 0.98;
+  box-shadow: inset 0px 0px 100px #555;
+}
+
+.back {
+  transform: translateZ(-100px) rotateY(180deg);
+  background-color: #1B1E23;
+}
+.right {
+  transform: rotateY(-270deg) translateX(100px);
+  transform-origin: top right;
+}
+.left {
+  transform: rotateY(270deg) translateX(-100px);
+  transform-origin: center left;
+}
+
+.front {
+  transform: translateZ(100px);
+  background-color: #1B1E23;
+}
+
+
+@keyframes spin {
+  from { transform: rotateY(0); }
+  to { transform: rotateY(360deg); }
+}
+
+.box-faces, .shadow {
+  animation: spin 15s infinite linear;
+}
+
+.icon { color: white;
+ }
+
+.shadow-wrapper {
+  perspective: 800px;
+  perspective-origin: 50% 100px;
+
+}
+
+.shadow {
+  position: relative;
+  width: 200px;
+  transform-style: preserve-3d;
+}
+
+.shadow div{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  top: 0px;
+  opacity: 0.98;
+  box-shadow: 0px 0px 100px #000;
+  transform: rotateX(90deg) translateY(100px);
+  transform-origin: bottom center;
+}
+
+
+// Index Page //
+
+.bottom-content {
+  position: relative;
+  min-height: 100px;
+  margin-top: 250px;
+}
+
+.content {
+  color: #222;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-top: 500px;
+  text-align: center;
+}
+
+
+// Shake Animation //
+
+.shake{
+    
+    animation: shake 1s infinite;
+}
+@keyframes shake {
+  0%  { transform: translate(2px, 1px)   rotate(0deg);  }
+  10% { transform: translate(-1px, -2px) rotate(-2deg); }
+  20% { transform: translate(-3px, 0px)  rotate(3deg);  }
+  30% { transform: translate(0px, 2px)   rotate(0deg);  }
+  40% { transform: translate(1px, -1px)  rotate(1deg);  }
+  50% { transform: translate(-1px, 2px)  rotate(-1deg); }
+  60% { transform: translate(-3px, 1px)  rotate(0deg);  }
+  70% { transform: translate(2px, 1px)   rotate(-2deg); }
+  80% { transform: translate(-1px, -1px) rotate(4deg);  }
+  90% { transform: translate(2px, 2px)   rotate(0deg);  }
+  100%{ transform: translate(1px, -2px)  rotate(-1deg); }
+}
+
+
