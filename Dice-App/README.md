@@ -1,6 +1,9 @@
 ![Front](./examples/front.png?raw=true "Front Page")
+********************************************************
 ![Single](./examples/single.png?raw=true "Single Dice")
+********************************************************
 ![Multiple](./examples/multiple.png?raw=true "Multiple Dice")
+********************************************************
 ![Custom](./examples/custom.png?raw=true "Custom Dice")
 
 ********************************************************
